@@ -314,6 +314,7 @@ input {
     margin-bottom: 10px;
     padding: 12px 35px;
     cursor: pointer;
+    transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
