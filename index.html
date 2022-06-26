@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="UTF-8">
@@ -43,7 +43,7 @@
                     <li class="header-item">
                         <a class="contact remove-underscores" href="tel:+380961111111">
                             <svg class="communication" width="10" height="16" >
-                                <use href="./images/symbol-defs.svg#icon-Vector1"></use>
+                                <use href="./images/symbol-defs.svg#icon-Vector11"></use>
                             </svg> +38 096 111 11 11    
                         </a>
                     </li>
@@ -391,6 +391,18 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-form-div">
+                <p class="footer-form-taitle">Подпишитесь на рассылку</p>
+                <form class="footer-form">
+                    <label for="mail" class="footer-label"></label>
+                    <input type="email" name="mail" id="mail" placeholder="E-mail">
+                </form>
+                <button class="footer-button">Подписаться
+                    <svg class="footer-button-contact">
+                        <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </footer>
     <!--  МАДАЛКА ЗАКАЗАТЬ УСЛУГУ    -->
@@ -398,9 +410,60 @@
         <div class="madal">
             <button class="madal-button" data-modal-close>
                 <svg class="madal-close">
-                    <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                    <use href="./images/symbol-defs.svg#icon-Vector1"></use>
                     <svg />
             </button>
+            <form class="form">
+                <h2 class="form-taitle">Оставьте свои данные, мы вам перезвоним</h2>
+                <div class="form-field">
+                    <label for="name" class="form-label-name">Имя</label>
+                    <div class="form-input-name">
+                        <input type="text" name="name" id="name" class="input-form" >
+                        <svg class="form-svg" height="12px" width="12" >
+                            <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="tel" class="form-label-tel">Телефон</label>
+                    <div class="form-input-name">
+                        <input type="tel" name="tel" id="tel" class="input-form">
+                        <svg class="form-svg" height="13px" width="13">
+                            <use href="./images/symbol-defs.svg#icon-tel"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="email" class="form-label-email">Почта</label>
+                    <div class="form-input-name">
+                        <input type="email" name="email" id="email" class="input-form">
+                        <svg class="form-svg" height="17px" width="17">
+                            <use href="./images/symbol-defs.svg#icon-mail"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <label for="comment" class="form-comment">Комментарий</label>
+                    <textarea name="" id="comment"  rows="8" class="torm-commet-textarea" placeholder="Введите текст"></textarea>
+                </div>
+
+                <div class="form-polisy">
+                    <input type="checkbox" name="" value="chec" id="polisy" class="checkbox">
+                    
+                    <label for="polisy" class="polisy-label">Соглашаюсь с рассылкой и принимаю <a href="/" class="contract">Условия
+                            договора</a> 
+                            <svg class="checkbox-form" height="13px" width="14">
+                                <use href="./images/symbol-defs.svg#icon-Vector-3"></use>
+                            </svg>
+                        </label>    
+                </div>
+
+
+                <button type="submit" class="button-form">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
