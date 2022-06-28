@@ -371,6 +371,7 @@ address{
   letter-spacing: 0.06em;
   padding-left: 29px;
   cursor: pointer;
+  border-style: none;
 }
 
 .footer-button-contact {
